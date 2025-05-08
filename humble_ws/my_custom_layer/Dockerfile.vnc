@@ -6,7 +6,23 @@ ENV TZ=Asia/Taipei
 ENV TERM=xterm
 ENV DISPLAY=:1
 
-RUN apt-get update && apt-get install -y --no-install-recommends x11vnc xvfb
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    x11vnc \
+    xvfb \
+    htop \
+    iotop \
+    net-tools \
+    supervisor \
+    tmux \
+    locales \
+    wget \
+    curl \
+    gnupg2 \
+    lsb-release \
+    git \
+    build-essential \
+    cmake \
+    && rm -rf /var/lib/apt/lists/*
 # VNC and time config steps...
 # VNC 設定
 RUN mkdir -p /var/log/x11vnc \
