@@ -91,7 +91,7 @@ It should output /parameter and /rosout_event
 	Right now, this hangs indefinitely and does not output anything 
 
 
-# Isaac Sim ROS & ROS2 Workspaces (More Details) 
+# Isaac Sim ROS & ROS2 Workspaces (More Details, This workspace is only used later in the future for running the examples after the error above is fixed) 
 
 This repository contains two workspaces: `noetic_ws` (ROS Noetic) and `humble_ws` (ROS2 Humble). 
 
