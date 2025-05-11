@@ -73,12 +73,12 @@ Then enable it if it has not been enabled
 	git clone https://github.com/audreych23/isaac-ros-vnc-workspace.git
 	```
 
-3. Run the following command to start the isaac-ros2 dev container with ros2 built-in
+3. Run the following command to start the isaac-ros2 dev container with ros2 built-in (no need to append --network host again since it is already inside the docker argument inside the run_dev.sh script) 
    
 	```
 	$PATH_TO_ISAAC_ROS_COMMON_REPO/scripts/run_dev.sh \
 		-d $PATH_TO_THIS_REPO/humble_ws -a \
-		"-v /dev/shm:/dev/shm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix  -v $HOME/.Xauthority:/root/.Xauthority"
+		"-v /dev/shm:/dev/shm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.Xauthority:/root/.Xauthority"
 	```
 
 5. Verify ros2
