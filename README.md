@@ -29,7 +29,7 @@ See [Docker and Docker Nvidia Toolkit Installation]( https://docs.isaacsim.omniv
 	      --network=host \
 	      -e "PRIVACY_CONSENT=Y" \
 	      -e "ACCEPT_EULA=Y" \
-	      -v /Path/to/User/docker/isaac-sim/cache/kit:/isaac-   sim/kit/cache:rw \
+	      -v /Path/to/User/docker/isaac-sim/cache/kit:/isaac-sim/kit/cache:rw \
 	      -v /Path/to/User/docker/isaac-sim/cache/ov:/root/.cache/ov:rw \
 	      -v /Path/to/User/docker/isaac-sim/cache/pip:/root/.cache/pip:rw \
 	      -v /Path/to/User/docker/isaac-sim/cache/glcache:/root/.cache/nvidia/GLCache:rw \
@@ -116,7 +116,7 @@ Then enable it if it has not been enabled
 	Right now, this hangs indefinitely and does not output anything 
 
 
-# Isaac Sim ROS & ROS2 Workspaces (More Details, This workspace is only used later in the future for running the examples after the error above is fixed) 
+# Isaac Sim ROS & ROS2 Workspaces (This workspace is only used later in the future for running the examples after the error above is fixed) 
 
 This repository contains two workspaces: `noetic_ws` (ROS Noetic) and `humble_ws` (ROS2 Humble). 
 
