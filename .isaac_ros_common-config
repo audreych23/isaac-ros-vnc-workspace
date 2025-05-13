@@ -1,4 +1,2 @@
-CONFIG_IMAGE_KEY="ros2_humble.vnc"
-CONFIG_DOCKER_SEARCH_DIRS=(~/docker/workspaces/IsaacSim-ros_workspaces/humble_ws/my_custom_layer)
-CONFIG_CONTAINER_NAME_SUFFIX=vnc
-BASE_DOCKER_REGISTRY_NAMES=("nvcr.io/isaac/ros")
+CONFIG_IMAGE_KEY="humble.sim"
+CONFIG_DOCKER_SEARCH_DIRS=(~/docker/workspaces_isaac_sim/IsaacSim-ros_workspaces/humble_ws/my_custom_layer)
